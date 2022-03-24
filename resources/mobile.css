@@ -1,0 +1,41 @@
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p, li {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+
+.spacePage {
+    padding: 20px 20px;
+}
+
+header > div {
+    padding-top: 60px;
+    margin: 0;
+    text-align: center;
+}
+
+.header-text{
+    font-size: 1.4rem;
+}
+
+#icon-github, #icon-twitter {
+    margin-left: 12px;
+    width: 38px;
+    cursor: pointer;
+}
+
+.c1 {
+    background-color: #0B2DCF;
+    position: absolute;
+    left: 3px;
+    width: 15px;
+    top: 0px;
+    height: 80rem;
+}

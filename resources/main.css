@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+:root {
+  --main-font: "Noto Sans JP", sans-serif;
+  --main-radius: 5px;
+  --main-padding: 5px;
+  --primary-color: #b1e693;
+  --secondary-color: #6ecb63;
+  --a-color: #fbf4e9;
+  --black: rgb(0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--main-font);
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  display: grid;
+  height: 120vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15fr 15fr 10fr 10fr;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "content1 content1"
+    "footer footer";
+  /* grid-gap: 0.2rem; */
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+}
+
+header {
+  background: var(--a-color);
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  padding: 0 3.7rem;
+  color: black;
+  font-family: var(--main-font);
+}
+
+main {
+  background: var(--primary-color);
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  padding: 0 3.7rem;
+  color: black;
+  font-family: var(--main-font);
+}
+
+section {
+  background: var(--secondary-color);
+  grid-area: content1;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  padding: 0 3.7rem;
+  color: black;
+  font-family: var(--main-font);
+}
+
+footer {
+  background: black;
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  padding: 0 3.7rem;
+  color: white;
+  font-family: var(--main-font);
+}
+
+.header-container {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.6rem;
+}
+
+.header-container > h1, h2, p {
+  color: white;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.description-container > p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: black;
+}
+
+
+.content1-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#icon-github,
+#icon-twitter {
+  margin-left: 12px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.education-container {
+  display:flex;
+  flex-direction: column;
+}
+
+.education-container > p {
+  color: black;
+}
+
+.skills-container {
+  display:flex;
+  flex-direction: column;
+}
+
+.skills-container > p {
+  color: black;
+}
